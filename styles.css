@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #4f063c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #ca9a0f;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header h2 {
+    color: #ca9a0f;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+    max-height: calc(100vh - 150px);
+}
+
+.editor-container {
+    display: flex;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    gap: 15px;
+}
+
+.editor-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.editor-header {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+textarea {
+    flex-grow: 1;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: #e0e0e0;
+    border: none;
+    padding: 15px;
+    resize: none;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+textarea::placeholder {
+    color: rgba(224, 224, 224, 0.5);
+}
+
+.result-container {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    flex-grow: 1;
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+
+.html-section .editor-header {
+    background-color: rgba(255, 99, 71, 0.3);
+}
+
+.css-section .editor-header {
+    background-color: rgba(64, 224, 208, 0.3);
+}
+
+.js-section .editor-header {
+    background-color: rgba(255, 215, 0, 0.3);
+}
